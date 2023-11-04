@@ -56,6 +56,19 @@
   .passenger-input {
     margin: 10px 0;
   }
+
+  /* Bookflight.css */
+.forgot-password-link {
+    color: #0073e6; /* Link color */
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px; /* Adjust the margin to your preference */
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: none; /* Remove underline on hover if needed */
+  }
+  
   
   button {
     background-color: #007BFF;
