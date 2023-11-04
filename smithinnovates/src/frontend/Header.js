@@ -8,9 +8,10 @@ function Header() {
       <div className="left-section">
         <div className="hamburger-icon">☰</div>
         <div className="profile-section">
-          <div className="settings">Settings</div>
-          <div className="book-flight">Book Flight</div>
+          <div className="settings"><Link to='/settings'>Settings</Link></div>
+          <div className="book-flight"><Link to='/book-flight'>Book Flight</Link></div>
           <div className="search">Search</div>
+          <div className='chatbot'> <Link to='/chatbot'>Chatbot</Link></div>
         </div>
       </div>
       <div className="right-section">

@@ -28,6 +28,20 @@
   .search {
     margin-right: 20px;
     cursor: pointer;
+    
+  }
+
+  .settings a {
+    color: #fff;
+    text-decoration-line: none;
+  }
+  .book-flight a {
+    color: #fff;
+    text-decoration-line: none;
+  }
+  .chatbot a {
+    color: #fff;
+    text-decoration-line: none;
   }
 
   .right-section {

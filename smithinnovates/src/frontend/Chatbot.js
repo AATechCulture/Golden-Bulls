@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
-import './ChatBot.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import {
     MainContainer,
@@ -12,11 +11,8 @@ import {
     TypingIndicator
   } from "@chatscope/chat-ui-kit-react";
   import SpeechRecognition from './SpeechRecognition'; 
-  import { auth} from './firebase'
+  import { auth} from '../backend/firebase'
   import 'bootstrap/dist/js/bootstrap.min.js';
-
-
-  
 
   const API_KEY = process.env.REACT_APP_OPENAI_API_KEY
   
