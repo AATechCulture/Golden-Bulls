@@ -63,7 +63,6 @@ function ChatBot() {
     async function processMessageToOpenAI(chatMessages) {
         
         let apiMessages = chatMessages.map((messageObject) => {
-            console.log('key', API_KEY)
             let role = '';
             if(messageObject.sender === 'TravelBuddy') {
                 role='assistant'
@@ -107,7 +106,7 @@ function ChatBot() {
             body: JSON.stringify(apiRequestBody)
         }).then(async(data) => {
             return data.json();
-        }).then((data) => {
+        }).then(async(data) => {
   
             setMessages(
                 [...chatMessages, {
