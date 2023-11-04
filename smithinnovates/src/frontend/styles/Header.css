@@ -23,6 +23,7 @@
     align-items: center;
   }
   
+  .profile-section-home,
   .settings,
   .book-flight,
   .search {
@@ -32,6 +33,10 @@
   }
 
   .settings a {
+    color: #fff;
+    text-decoration-line: none;
+  }
+  .profile-section-home a {
     color: #fff;
     text-decoration-line: none;
   }
