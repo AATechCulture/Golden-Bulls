@@ -27,7 +27,7 @@ function ChatBot() {
     const [messages, setMessages] = useState([
         {
             message: 'Hello there',
-            sender: 'ChatGPT'
+            sender: 'TravelBuddy'
         }
     ])
 
@@ -49,26 +49,27 @@ function ChatBot() {
         if (message.toLowerCase() === 'hey chat') {
             const initialMessage = {
               message: 'Hello there',
-              sender: 'ChatGPT'
+              sender: 'TravelBuddy'
             }
             
             setMessages([initialMessage]);
             
             return;
           }
-        // process message to chatgpt
+        // process message to'TravelBuddy
         await processMessageToOpenAI(newMessages);
     }
 
     async function processMessageToOpenAI(chatMessages) {
         
         let apiMessages = chatMessages.map((messageObject) => {
+            console.log('key', API_KEY)
             let role = '';
-            if(messageObject.sender === 'ChatGPT') {
+            if(messageObject.sender === 'TravelBuddy') {
                 role='assistant'
                 const chatBotMessage = {
                     message: 'Hello there',
-                    sender: 'ChatGPT'
+                    sender: 'TravelBuddy'
                   };
                   
                   const chatBotEvent = new CustomEvent('chatBotMessage', { detail: chatBotMessage });
@@ -86,7 +87,7 @@ function ChatBot() {
 
         const systemMessage = {
             role: 'system',
-            content: 'Explain in detail for easy understanding.'
+            content: 'You are a virtual airline assistant of American Airlines.'
         }
 
         const apiRequestBody = {
@@ -104,15 +105,14 @@ function ChatBot() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(apiRequestBody)
-            //
-        }).then((data) => {
+        }).then(async(data) => {
             return data.json();
         }).then((data) => {
-            
+  
             setMessages(
                 [...chatMessages, {
                     message: data.choices[0].message.content,
-                    sender: 'ChatGPT'
+                    sender: 'TravelBuddy'
                 }]
                 
             );
@@ -126,7 +126,7 @@ function ChatBot() {
               }
         });
             
-        });
+    });
     }
 
 
