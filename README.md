@@ -53,11 +53,15 @@ https://drive.google.com/file/d/163HTl5v8lw6NGrHt6BWTa7Vn13UrYVnF/view?usp=drive
 Link to Demo Presentation 📽
 https://www.canva.com/design/DAFzRdVN1yM/-wFhdOwJD_LuVfhL50MzIQ/edit?utm_content=DAFzRdVN1yM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 <br>
+
+Link to Business Plan
+https://docs.google.com/document/d/1E2kly5wP6-K2QzPX5kJZErtwupEMepw_jqlxGXA69_Y/edit?usp=sharing
+<br>
+
 Link to Software Architecture
 <br>
 https://miro.com/app/board/uXjVNS6qY6k=/?moveToWidget=3458764568958077670&cot=14
 <br>
-Link to Business Plan
-https://docs.google.com/document/d/1E2kly5wP6-K2QzPX5kJZErtwupEMepw_jqlxGXA69_Y/edit?usp=sharing
-<br>
+
+
 
