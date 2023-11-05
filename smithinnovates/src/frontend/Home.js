@@ -1,7 +1,15 @@
 import React from 'react';
 import './styles/Home.css'; // Import your custom CSS for styling
+import { updateMilesInFirestore } from './milesUtils';
 
 function Home() {
+  const handleClick = (e) => {
+    const miles = 10; // You can adjust the number of miles to reward
+    
+
+    // Call the function to update miles in Firestore
+    updateMilesInFirestore(miles);
+  }
   return (
     <div className="home-main">
       <div className="heading">
@@ -46,6 +54,7 @@ function Home() {
           For inquiries or assistance, please feel free to contact us at{' '}
           <a href="mailto:contact@jetflygo.com">contact@jetflygo.com</a>. Your feedback and questions are important to us, and we're here to ensure your travel experience is enjoyable and stress-free.
         </p>
+        <button onClick={handleClick}>Gain Point</button>
       </div>
     </div>
   );
