@@ -10,6 +10,7 @@ Jet-Fly-Go is a smart travel assistant that helps you fly with ease and comfort.
 It uses data from various sources, such as your profile, flight information, weather, traffic, airport maps, and expected wait time, to send you customized notifications and reminders throughout your journey.
 Jet-Fly-Go also uses advanced analytics and artificial intelligence to optimize your travel plan and keep you updated on your flight and the amenities that AA offers.
 Whether you need to check in online, find your gate, order a snack, or contact support, Jet-Fly-Go will provide you with personalized and timely information. Jet-Fly-Go is designed to make your flying experience more enjoyable and hassle-free.
+
 Project Value 💰
 ....at lease 3 sentences describing your target customer and tangible benefits from your solution
 
@@ -18,13 +19,14 @@ Stacks and languages used:
 React.js
 Javascript
 American Airlines Flight Engine API
+Stripe API
 
 ✨ Contributors ✨
 <ul>Elton Mombeshora V98DD78</ul>
-<ul></ul>Jackson Kakwenya C116TY4</ul>
-Purity Gumede E68LT52
-Tanaka Mbavarira P31AD76
-Jerome Adonis D53EJ44
+<ul>Jackson Kakwenya C116TY4</ul>
+<ul>Purity Gumede E68LT52</ul>
+<ul>Tanaka Mbavarira P31AD76</ul>
+<ul>Jerome Adonis D53EJ44</ul>
 School Name 🏫
 Johnson C. Smith University
 
