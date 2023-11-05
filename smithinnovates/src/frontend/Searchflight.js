@@ -12,13 +12,6 @@ function SearchFlight() {
   const navigate = useNavigate()
 
   // List of airports as options
-  const airports = [
-    'DFW',
-    'PHL',
-    'JFK',
-    'LAX',
-    // Add more airport codes as needed
-  ];
 
   const handleClick = () => {
     navigate('/search-results')
@@ -38,7 +31,7 @@ function SearchFlight() {
           />
           Round Trip
         </label>
-        <label>
+        <label> 
           <input
             type="radio"
             name="trip-type"
