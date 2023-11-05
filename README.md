@@ -16,10 +16,10 @@ Project Value 💰
 
 Tech Overview 💻
 Stacks and languages used:
-React.js
-Javascript
-American Airlines Flight Engine API
-Stripe API
+<ul>React.js</ul>
+<ul>Javascript</ul>
+<ul>American Airlines Flight Engine API</ul>
+<ul>Stripe API</ul>
 
 ✨ Contributors ✨
 <ul>Elton Mombeshora V98DD78</ul>
