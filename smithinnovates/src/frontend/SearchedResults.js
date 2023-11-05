@@ -3,19 +3,20 @@ import React, { useState, useEffect } from 'react';
 function SearchedResults() {
   const [flights, setFlights] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedFlights, setSelectedFlights] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          'http://localhost:4000/flights?date=2023-11-14'
-        );
+        const response = await fetch('http://localhost:4000/flights?date=2023-11-14');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
 
         const data = await response.json();
-        setFlights(data);
+        // Limit the number of results to 10
+        const limitedFlights = data.slice(0, 10);
+        setFlights(limitedFlights);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching flight data:', error);
@@ -24,6 +25,16 @@ function SearchedResults() {
 
     fetchData();
   }, []);
+
+  const handleFlightSelection = (flightNumber) => {
+    // Check if the flight is already selected, and toggle its selection.
+    const isFlightSelected = selectedFlights.includes(flightNumber);
+    if (isFlightSelected) {
+      setSelectedFlights(selectedFlights.filter((number) => number !== flightNumber));
+    } else {
+      setSelectedFlights([...selectedFlights, flightNumber]);
+    }
+  };
 
   if (loading) {
     return <div>Loading flight data...</div>;
@@ -42,6 +53,7 @@ function SearchedResults() {
             <th>Arrival Time</th>
             <th>Distance</th>
             <th>Duration</th>
+            <th>Select</th> {/* Add a Select column */}
           </tr>
         </thead>
         <tbody>
@@ -54,10 +66,25 @@ function SearchedResults() {
               <td>{flight.arrivalTime}</td>
               <td>{flight.distance} miles</td>
               <td>{flight.duration.locale}</td>
+              <td>
+                <input
+                  type="checkbox"
+                  checked={selectedFlights.includes(flight.flightNumber)}
+                  onChange={() => handleFlightSelection(flight.flightNumber)}
+                />
+              </td>
             </tr>
           ))}
         </tbody>
       </table>
+      <div>
+        <h2>Selected Flights</h2>
+        <ul>
+          {selectedFlights.map((flightNumber) => (
+            <li key={flightNumber}>{flightNumber}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
