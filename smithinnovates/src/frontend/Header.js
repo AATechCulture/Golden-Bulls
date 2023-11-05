@@ -17,6 +17,7 @@ function Header() {
       </div>
       <div className="right-section">
       <div className="settings"><Link to="/login" className="login-link">Login</Link></div>
+      <div className="settings"><Link to="/reminder">Reminders</Link></div>  
         {/* Add any other content or components for the right section */}
       </div>
     </header>

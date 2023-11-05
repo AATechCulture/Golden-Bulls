@@ -12,8 +12,11 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
-    // Your existing login logic here
+    signInWithEmailAndPassword( auth, email, password).then((auth) => {
+      if (auth){
+          navigate('/')
+      }
+  }).catch(error => alert(error.message))
   };
 
   const handleForgotPassword = () => {
