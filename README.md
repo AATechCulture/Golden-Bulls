@@ -5,8 +5,9 @@ Jet-Fly-Go
 Challenge Statement(s) Addressed 🎯
 Customers flying with American Airlines(AA) experience high levels of stress and anxiety during the preflight, flight, and post-flight experience, which negatively affect their satisfaction and loyalty to AA. The stress and anxiety are caused by various challenges and uncertainties, such as getting to the airport on time, finding their terminals, checking in their luggage, going through security, boarding the plane, collecting their baggage, and reaching their final destination. According to a survey, customers flying with AA report an average of 7.6 out of 10 on a stress scale, which is significantly higher than the industry average of 6.2. Data also shows that at atleast 40% of air travel customers experience some form of anxiety during their flight experience. Reducing the stress and anxiety of customers is important for AA, as it can improve customer experience and as a result boost customer satisfaction and loyalty. This will help enhance the company’s reputation, and competitiveness therefore helping AA retain its existing customers and onboard new ones. We built an application that will provide timely, relevant, and personalized notifications and reminders to customers flying with AA, based on their preferences, itinerary, and location. The app will help customers plan their travel, navigate the airport, and enjoy their flight, thereby reducing their stress and anxiety levels. 
 
-Build an application that will help positively impact airline customers, airline employees, and/or airline operations!
+<br>
 Project Description 🤯
+<br>
 Jet-Fly-Go is a smart travel assistant that helps you fly with ease and comfort.
 It uses data from various sources, such as your profile, flight information, weather, traffic, airport maps, and expected wait time, to send you customized notifications and reminders throughout your journey.
 Jet-Fly-Go also uses advanced analytics and artificial intelligence to optimize your travel plan and keep you updated on your flight and the amenities that AA offers.
