@@ -1,48 +1,52 @@
-import React from 'react';
-import Reminder from './Reminder';
-//import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './styles/ReminderHome.css'
-import { Carousel } from 'react-responsive-carousel';
+import React, { useState } from 'react';
+import './styles/ReminderHome.css';
 
 function ReminderHome() {
-  // Replace with your actual flight time
-  const flightTime = new Date('2023-11-09T10:00:00');
+  const [reminders, setReminders] = useState([
+    { text: "It's time to pack your bags!", completed: false },
+    { text: "Time to head to the airport!", completed: false },
+    { text: "Don't worry, traffic is looking good.", completed: false },
+  ]);
+  const [newReminder, setNewReminder] = useState('');
 
-  
+  const addReminder = () => {
+    if (newReminder.trim() !== '') {
+      setReminders([...reminders, { text: newReminder, completed: false }]);
+      setNewReminder('');
+    }
+  };
 
+  const toggleReminder = (index) => {
+    const updatedReminders = [...reminders];
+    updatedReminders[index].completed = !updatedReminders[index].completed;
+    setReminders(updatedReminders);
+  };
 
   return (
-    <div>
-      <h1>Welcome to Your Flight Reminder</h1>
-      <div className="main-carousel-container">
-        <Carousel
-          showThumbs={false}
-          infiniteLoop={true}
-          autoPlay={true}
-          interval={5000}
-        >
-          <div className="carousel-container">
-            <img src="/media/tower.jpg" alt="" />
+    <div className="reminder-home">
+      <h1>Reminders</h1>
+
+      <div className="reminders-list">
+        {reminders.map((reminder, index) => (
+          <div key={index} className={`reminder-item ${reminder.completed ? 'completed' : ''}`}>
+            <input
+              type="checkbox"
+              checked={reminder.completed}
+              onChange={() => toggleReminder(index)}
+            />
+            <span>{reminder.text}</span>
           </div>
-          <div className="carousel-container">
-            <img src="/media/tower1.jpg" alt="" />
-          </div>
-          <div className="carousel-container">
-            <img src="/media/inflight.jpg" alt="" />
-          </div>
-          
-        </Carousel>
+        ))}
       </div>
-      <h2>Flight Details</h2>
-      {/* Display flight information */}
-      <Reminder flightTime={flightTime} />
-      <div className="fun-messages">
-        <p>Get ready for an amazing journey!</p>
-        <p>Don't forget to pack your favorite book.</p>
-        {/* Add more fun messages or tips */}
+
+      <div className="add-reminder">
+        <input
+          type="text"
+          placeholder="Add a new reminder"
+          value={newReminder}
+          onChange={(e) => setNewReminder(e.target.value)}
+        />
+        <button onClick={addReminder}>+</button>
       </div>
     </div>
   );
