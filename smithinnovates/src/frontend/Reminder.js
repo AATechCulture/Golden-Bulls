@@ -35,7 +35,7 @@ function Reminder({ flightTime }) {
 
       return () => clearTimeout(timer);
     });
-  }, [flightTime, reminders]);
+  }, []);
 
   return (
     <div>
