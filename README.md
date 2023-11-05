@@ -12,7 +12,14 @@ Jet-Fly-Go also uses advanced analytics and artificial intelligence to optimize 
 Whether you need to check in online, find your gate, order a snack, or contact support, Jet-Fly-Go will provide you with personalized and timely information. Jet-Fly-Go is designed to make your flying experience more enjoyable and hassle-free.
 
 Project Value 💰
-....at lease 3 sentences describing your target customer and tangible benefits from your solution
+JetFlyGo is the perfect friend for first-time fliers who are anxious about their first flight. Our mobile app streamlines their flight experience by giving them relevant and timely information and notifications from the moment the flight is booked right through to their final destination. Our smart assistant, powered by advanced analytics and artificial intelligence, will help them pack appropriately for their destination, get to the airport on time, and check-in. It will provide useful information such as travel preparation information, up-to-date updates like unexpected gate changes, airport navigation, and other personalized notifications to help them experience a more relaxed and enjoyable flight. New customers can get all this whilst earning Loyalty points.
+
+For AA’s differently abled customers who experience high levels of stress and anxiety during the preflight, flight, and post-flight experiences, JetFlyGo helps them plan and get travel assistance promptly. Our smart assistant powered by advanced analytics and artificial intelligence provides reminders based on their preferences, itinerary, and location, to help them plan their travel, navigate the airport, and enjoy their flight. JetFlyGo is able to collect data on our customer’s needs and provide relevant information and notifications to cater for those needs.
+
+For AA customers who are flying to a new destination, JetFlyGo helps them plan their post-flight experience. Our AI powered smart assistant will provide recommendations for destination activities, weather forecasts, and hotel accommodations for customers through a recommendation engine based on their preferences, itinerary, and location. JetFlyGo will not only help customers plan for their journey but their full travel experience including and stay at the destination!
+
+JetFlyGo is the future of air travel and the future is here! JetFlyGo allows customers to feel in control of their journey and be able to concentrate on the buzz and excitement of reaching their final destination during the flight experience.
+
 
 Tech Overview 💻
 Stacks and languages used:
