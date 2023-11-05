@@ -8,6 +8,7 @@ import ChatBot from './frontend/Chatbot';
 import SearchedResults from './frontend/SearchedResults';
 import Bookflight from './frontend/Bookflight';
 import ReminderHome from './frontend/ReminderHome';
+import Profile from './frontend/Profile';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path='/chatbot' element={(<> <Header /><ChatBot /></>)} />
+      <Route path='/profile' element={(<> <Header /><Profile /></>)} />
       <Route path='/reminder' element={(<> <Header /><ReminderHome /></>)} />
       <Route path='/search-results' element={(<> <Header /><SearchedResults /></>)} />
       <Route path='/book-flight' element={(<> <Header /><Bookflight /></>)} />

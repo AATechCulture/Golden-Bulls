@@ -53,7 +53,6 @@ function Header() {
         <div className="hamburger-icon">☰</div>
         <div className="profile-section">
         <div className="profile-section-home"><Link to='/'>Home</Link></div>
-          <div className="settings"><Link to='/settings'>Settings</Link></div>
           <div className="book-flight"><Link to='/search-flight'>Search Flight</Link></div>
           <div className="search">Search</div>
           <div className='chatbot'> {user ? (<Link to= '/chatbot' className='header-link'><span>ChatBot</span></Link>) :
@@ -71,7 +70,8 @@ function Header() {
           <span>Login</span>
         </Link>
       )}</div>
-      <div className="settings"><Link to="/reminder">Reminders</Link></div>  
+      <div className="settings"><Link to="/reminder">Reminders</Link></div>
+      <div className="settings"><Link to='/profile'>Profile</Link></div>  
         {/* Add any other content or components for the right section */}
       </div>
     </header>
