@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="home-main">
       <div className="heading">
-        <h1>Welcome to Jet-Fly-Go</h1>
+      <h1 className="welcome-text">Welcome to Jet-Fly-Go</h1>
       </div>
 
       <div className="content-container">

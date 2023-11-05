@@ -7,15 +7,10 @@ function Bookflight() {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const selectedFlights = searchParams.get('selectedFlights');
+   // Split the selected flight numbers into an array
+   const flightNumbers = selectedFlights ? selectedFlights.split(',') : [];
 
-  if (!selectedFlights) {
-    return <div>No flight selected</div>;
-  }
-
-  // Split the selected flight numbers into an array
-  const flightNumbers = selectedFlights ? selectedFlights.split(',') : [];
-
-  const [flightDetails, setFlightDetails] = useState([]);
+   const [flightDetails, setFlightDetails] = useState([]);
 
   useEffect(() => {
     // Function to fetch flight details based on flight number
@@ -31,6 +26,10 @@ function Bookflight() {
         console.error(`Error fetching flight details for ${flightNumber}:`, error);
       }
     };
+
+    if (!selectedFlights) {
+      return <div>No flight selected</div>;
+    }
 
     if (flightNumbers.length > 0) {
       // Fetch flight details for each flight number
