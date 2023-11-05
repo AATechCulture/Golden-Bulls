@@ -11,6 +11,14 @@
     color: white;
     padding: 20px;
   }
+
+  .welcome-text {
+    color: #0073e6; /* Change this to the desired text color */
+  }
+
+  .home{
+    color:#0073e6
+  }
   
   /* Styles for the content container */
   .content-container {
