@@ -1,0 +1,5 @@
+.carousel-container > img {
+    object-fit: contain; 
+    max-height: 6%; 
+    max-width: 30%; 
+}
