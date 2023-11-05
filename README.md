@@ -47,7 +47,8 @@ Team Name 🏷
 Smith Innovates
 
 Link to Video Pitch 📹
-...point us to where you tell us about your solution 😄
+https://drive.google.com/file/d/163HTl5v8lw6NGrHt6BWTa7Vn13UrYVnF/view?usp=drive_link
+<br>
 
 Link to Demo Presentation 📽
 https://www.canva.com/design/DAFzRdVN1yM/-wFhdOwJD_LuVfhL50MzIQ/edit?utm_content=DAFzRdVN1yM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
