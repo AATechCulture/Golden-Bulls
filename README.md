@@ -13,7 +13,7 @@ Jet-Fly-Go is a smart travel assistant that helps you fly with ease and comfort.
 It uses data from various sources, such as your profile, flight information, weather, traffic, airport maps, and expected wait time, to send you customized notifications and reminders throughout your journey.
 Jet-Fly-Go also uses advanced analytics and artificial intelligence to optimize your travel plan and keep you updated on your flight and the amenities that AA offers.
 Whether you need to check in online, find your gate, order a snack, or contact support, Jet-Fly-Go will provide you with personalized and timely information. Jet-Fly-Go is designed to make your flying experience more enjoyable and hassle-free.
-
+<br>
 
 Project Value 💰
 <br>
