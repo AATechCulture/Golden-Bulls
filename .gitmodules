@@ -1,0 +1,3 @@
+[submodule "smithinnovates/smithinnovates/src/backend/Flight-Engine"]
+	path = smithinnovates/smithinnovates/src/backend/Flight-Engine
+	url = https://github.com/AmericanAirlines/Flight-Engine.git
