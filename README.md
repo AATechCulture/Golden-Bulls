@@ -14,7 +14,7 @@ It uses data from various sources, such as your profile, flight information, wea
 Jet-Fly-Go also uses advanced analytics and artificial intelligence to optimize your travel plan and keep you updated on your flight and the amenities that AA offers.
 Whether you need to check in online, find your gate, order a snack, or contact support, Jet-Fly-Go will provide you with personalized and timely information. Jet-Fly-Go is designed to make your flying experience more enjoyable and hassle-free.
 
-<br>
+
 Project Value 💰
 <br>
 JetFlyGo is the perfect friend for first-time fliers who are anxious about their first flight. Our mobile app streamlines their flight experience by giving them relevant and timely information and notifications from the moment the flight is booked right through to their final destination. Our smart assistant, powered by advanced analytics and artificial intelligence, will help them pack appropriately for their destination, get to the airport on time, and check-in. It will provide useful information such as travel preparation information, up-to-date updates like unexpected gate changes, airport navigation, and other personalized notifications to help them experience a more relaxed and enjoyable flight. New customers can get all this whilst earning Loyalty points.
