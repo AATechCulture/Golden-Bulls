@@ -20,8 +20,8 @@ Javascript
 American Airlines Flight Engine API
 
 ✨ Contributors ✨
-Elton Mombeshora V98DD78
-Jackson Kakwenya C116TY4
+<ul>Elton Mombeshora V98DD78</ul>
+<ul></ul>Jackson Kakwenya C116TY4</ul>
 Purity Gumede E68LT52
 Tanaka Mbavarira P31AD76
 Jerome Adonis D53EJ44
