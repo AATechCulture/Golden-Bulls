@@ -14,7 +14,7 @@ It uses data from various sources, such as your profile, flight information, wea
 Jet-Fly-Go also uses advanced analytics and artificial intelligence to optimize your travel plan and keep you updated on your flight and the amenities that AA offers.
 Whether you need to check in online, find your gate, order a snack, or contact support, Jet-Fly-Go will provide you with personalized and timely information. Jet-Fly-Go is designed to make your flying experience more enjoyable and hassle-free.
 
-
+<br>
 Project Value 💰
 <br>
 JetFlyGo is the perfect friend for first-time fliers who are anxious about their first flight. Our mobile app streamlines their flight experience by giving them relevant and timely information and notifications from the moment the flight is booked right through to their final destination. Our smart assistant, powered by advanced analytics and artificial intelligence, will help them pack appropriately for their destination, get to the airport on time, and check-in. It will provide useful information such as travel preparation information, up-to-date updates like unexpected gate changes, airport navigation, and other personalized notifications to help them experience a more relaxed and enjoyable flight. New customers can get all this whilst earning Loyalty points.
@@ -56,18 +56,8 @@ https://www.canva.com/design/DAFzRdVN1yM/-wFhdOwJD_LuVfhL50MzIQ/edit?utm_content
 Link to Software Architecture
 <br>
 https://miro.com/app/board/uXjVNS6qY6k=/?moveToWidget=3458764568958077670&cot=14
-Team Checklist due before 5p Saturday 11/4 ✅
-[✅] Team photo -
-[✅] Team Slack channel
-[✅] Communication established with mentor
-[✅] Repo creation from this template
-[✅] Hangar registration
- Scavenger Hunt submission
-Project Checklist due before 10a Sunday 11/5 🏁
- Presentation complete and linked
- Video pitch recorded and linked
- Code merged to main branch
-Sample Checklist for Syntax Example
- Presentation complete and linked
- Video pitch recorded and linked
- Code merged to main branch
+<br>
+Link to Business Plan
+https://docs.google.com/document/d/1E2kly5wP6-K2QzPX5kJZErtwupEMepw_jqlxGXA69_Y/edit?usp=sharing
+<br>
+
