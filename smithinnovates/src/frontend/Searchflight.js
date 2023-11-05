@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
 import './styles/Searchflight.css';
+import { useNavigate } from 'react-router-dom';
 
-function BookFlight() {
+function SearchFlight() {
   const [tripType, setTripType] = useState('round-trip');
   const [fromLocation, setFromLocation] = useState('');
   const [toLocation, setToLocation] = useState('');
   const [departureDate, setDepartureDate] = useState('');
   const [returnDate, setReturnDate] = useState('');
   const [passengerCount, setPassengerCount] = useState(1);
+  const navigate = useNavigate()
 
   // List of airports as options
   const airports = [
-    'Airport 1',
-    'Airport 2',
-    'Airport 3',
-    // Add more airports as needed
+    'DFW',
+    'PHL',
+    'JFK',
+    'LAX',
+    // Add more airport codes as needed
   ];
+
+  const handleClick = () => {
+    navigate('/search-results')
+  }
 
   return (
     <div className="book-flight-page">
@@ -43,30 +50,20 @@ function BookFlight() {
         </label>
       </div>
       <div className="location-inputs">
-        <label>From:</label>
-        <select
+        <label>From (Airport Code):</label>
+        <input
+          type="text"
+          placeholder="Enter airport code"
           value={fromLocation}
           onChange={(e) => setFromLocation(e.target.value)}
-        >
-          <option value="">Select an airport</option>
-          {airports.map((airport, index) => (
-            <option key={index} value={airport}>
-              {airport}
-            </option>
-          ))}
-        </select>
-        <label>To:</label>
-        <select
+        />
+        <label>To (Airport Code):</label>
+        <input
+          type="text"
+          placeholder="Enter airport code"
           value={toLocation}
           onChange={(e) => setToLocation(e.target.value)}
-        >
-          <option value="">Select an airport</option>
-          {airports.map((airport, index) => (
-            <option key={index} value={airport}>
-              {airport}
-            </option>
-          ))}
-        </select>
+        />
       </div>
       <div className="date-inputs">
         <label>Departure Date:</label>
@@ -79,7 +76,7 @@ function BookFlight() {
           <>
             <label>Return Date:</label>
             <input
-              type="date"
+              type="date" 
               value={returnDate}
               onChange={(e) => setReturnDate(e.target.value)}
             />
@@ -95,9 +92,9 @@ function BookFlight() {
           onChange={(e) => setPassengerCount(e.target.value)}
         />
       </div>
-      <button>Search Flights</button>
+      <button onClick={handleClick}>Search Flights</button>
     </div>
   );
 }
 
-export default BookFlight;
+export default SearchFlight;
