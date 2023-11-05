@@ -53,6 +53,7 @@ Link to Demo Presentation 📽
 https://www.canva.com/design/DAFzRdVN1yM/-wFhdOwJD_LuVfhL50MzIQ/edit?utm_content=DAFzRdVN1yM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 <br>
 Link to Software Architecture
+<br>
 https://miro.com/app/board/uXjVNS6qY6k=/?moveToWidget=3458764568958077670&cot=14
 Team Checklist due before 5p Saturday 11/4 ✅
 [✅] Team photo -
