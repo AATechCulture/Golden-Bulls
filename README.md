@@ -14,7 +14,6 @@ It uses data from various sources, such as your profile, flight information, wea
 Jet-Fly-Go also uses advanced analytics and artificial intelligence to optimize your travel plan and keep you updated on your flight and the amenities that AA offers.
 Whether you need to check in online, find your gate, order a snack, or contact support, Jet-Fly-Go will provide you with personalized and timely information. Jet-Fly-Go is designed to make your flying experience more enjoyable and hassle-free.
 
-
 <br>
 Project Value 💰
 <br>
@@ -51,7 +50,9 @@ Link to Video Pitch 📹
 ...point us to where you tell us about your solution 😄
 
 Link to Demo Presentation 📽
-...point us to your PPT or Canva slides 😍
+https://www.canva.com/design/DAFzRdVN1yM/-wFhdOwJD_LuVfhL50MzIQ/edit?utm_content=DAFzRdVN1yM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+<br>
+Link to Software Architecture
 https://miro.com/app/board/uXjVNS6qY6k=/?moveToWidget=3458764568958077670&cot=14
 Team Checklist due before 5p Saturday 11/4 ✅
 [✅] Team photo -
