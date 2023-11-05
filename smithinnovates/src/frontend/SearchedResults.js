@@ -5,12 +5,18 @@ function SearchedResults() {
   const [flights, setFlights] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedFlights, setSelectedFlights] = useState([]);
+  const [selectedFlight, setSelectedFlight] = useState(null); // Define selectedFlight here
   const navigate = useNavigate();
 
   const navigateToBookFlight = () => {
     const selectedFlightsQueryParam = selectedFlights.join(',');
   
-    // Use navigate to navigate to the '/book-flight' route with query parameters
+    if (selectedFlights.length === 1) {
+      const selectedFlightNumber = selectedFlights[0];
+      const selectedFlight = flights.find((flight) => flight.flightNumber === selectedFlightNumber);
+      setSelectedFlight(selectedFlight); // Set selectedFlight here
+    }
+
     navigate(`/book-flight?selectedFlights=${selectedFlightsQueryParam}`);
   };
 
@@ -23,7 +29,6 @@ function SearchedResults() {
         }
 
         const data = await response.json();
-        // Limit the number of results to 10
         const limitedFlights = data.slice(0, 10);
         setFlights(limitedFlights);
         setLoading(false);
@@ -36,7 +41,6 @@ function SearchedResults() {
   }, []);
 
   const handleFlightSelection = (flightNumber) => {
-    // Check if the flight is already selected, and toggle its selection.
     const isFlightSelected = selectedFlights.includes(flightNumber);
     if (isFlightSelected) {
       setSelectedFlights(selectedFlights.filter((number) => number !== flightNumber));
@@ -62,7 +66,7 @@ function SearchedResults() {
             <th>Arrival Time</th>
             <th>Distance</th>
             <th>Duration</th>
-            <th>Select</th> {/* Add a Select column */}
+            <th>Select</th>
           </tr>
         </thead>
         <tbody>
