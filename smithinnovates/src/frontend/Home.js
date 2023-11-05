@@ -12,12 +12,12 @@ function Home() {
         <div className="left-content">
           <h2>About Jet-Fly-Go</h2>
           <p>
-            Jet-Fly-Go is a revolutionary travel companion designed to transform your flying experience into a hassle-free journey. Our team at Smith Innovates, a passionate group of innovators from Johnson C. Smith University, has created Jet-Fly-Go to make flying with ease and comfort a reality. We harness the power of technology, leveraging React.js and JavaScript, to provide you with personalized travel assistance that adapts to your needs.
+            Jet-Fly-Go is a revolutionary travel companion designed to transform your flying experience into a hassle-free journey. Our team, a passionate group of innovators, has created Jet-Fly-Go to make flying with ease and comfort a reality. We harness the power of technology and AI, leveraging cutting edge technology and data analysis, to provide you with personalized travel assistance that adapts to your needs.
           </p>
         </div>
 
         <div className="right-content">
-          <img src="/media/welcome.jpg" alt="Welcome" />
+          <img src="/media/logo.png" alt="Welcome" />
         </div>
       </div>
 
