@@ -75,6 +75,7 @@ function Signup() {
     username: newUsername,
     email: email,
     state: state,
+    AAdvantageMiles: 200
   };
 
   const handleSignup = (event) => {
