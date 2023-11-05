@@ -68,6 +68,7 @@ function Bookflight() {
           </tbody>
         </table>
       ))}
+      <button>Checkout</button>
     </div>
   );
 }
