@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/ReminderHome.css';
+import { updateMilesInFirestore } from './milesUtils';
 
 function ReminderHome() {
   const [reminders, setReminders] = useState([
@@ -8,6 +9,7 @@ function ReminderHome() {
     { text: "Don't worry, traffic is looking good.", completed: false },
   ]);
   const [newReminder, setNewReminder] = useState('');
+  const [completedCount, setCompletedCount] = useState(0);
 
   const addReminder = () => {
     if (newReminder.trim() !== '') {
@@ -15,12 +17,21 @@ function ReminderHome() {
       setNewReminder('');
     }
   };
+  
 
   const toggleReminder = (index) => {
     const updatedReminders = [...reminders];
     updatedReminders[index].completed = !updatedReminders[index].completed;
     setReminders(updatedReminders);
+
+  const count = updatedReminders.filter((reminder) => reminder.completed).length;
+    setCompletedCount(count);
   };
+
+  const handleConfirm = (e) => {
+    const miles = 50*completedCount;
+    updateMilesInFirestore(miles);
+  }
 
   return (
     <div className="reminder-home">
@@ -48,6 +59,11 @@ function ReminderHome() {
         />
         <button onClick={addReminder}>+</button>
       </div>
+      <div className="completed-counter">
+        <p>Completed tasks: {completedCount}</p>
+        <button onClick={handleConfirm}>Confirm</button>
+      </div>
+
     </div>
   );
 }
