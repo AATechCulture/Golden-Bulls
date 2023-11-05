@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function SearchedResults() {
   const [flights, setFlights] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedFlights, setSelectedFlights] = useState([]);
+  const navigate = useNavigate();
+
+  const navigateToBookFlight = () => {
+    const selectedFlightsQueryParam = selectedFlights.join(',');
+  
+    // Use navigate to navigate to the '/book-flight' route with query parameters
+    navigate(`/book-flight?selectedFlights=${selectedFlightsQueryParam}`);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -85,6 +94,7 @@ function SearchedResults() {
           ))}
         </ul>
       </div>
+      <button onClick={navigateToBookFlight}>Book Selected Flights</button>
     </div>
   );
 }
