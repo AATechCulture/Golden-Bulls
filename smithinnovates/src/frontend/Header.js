@@ -50,7 +50,7 @@ function Header() {
       <div className="left-section">
         
         <img onClick={homeClick} className='header-logo' src='/media/logo.png' alt=''/>
-        <div className="hamburger-icon">☰</div>
+        <div className="hamburger-icon"></div>
         <div className="profile-section">
         <div className="profile-section-home"><Link to='/'>Home</Link></div>
           <div className="book-flight"><Link to='/search-flight'>Search Flight</Link></div>
